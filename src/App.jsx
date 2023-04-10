@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       hello from assignment
+      i am a developer
     </div>
   )
 }
