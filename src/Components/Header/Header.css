@@ -39,7 +39,6 @@ ul li:hover{
         flex-direction: column;
         width: 100%;
         text-align: center;
-        /* color: white; */
     }
     nav h1 {
         font-size: 30px;
