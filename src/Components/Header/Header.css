@@ -1,8 +1,9 @@
 header{
-    margin: 20px;
+    margin: 20px 0;
 }
 hr{
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 header nav {
     display: flex;
