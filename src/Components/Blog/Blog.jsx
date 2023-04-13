@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Blog.css';
 
 const Blog = (props) => {
-    const {
-        title, author, authorImg, publishedIn, timeToRead
-        , titleImg, hashTags
+    const { title, author, authorImg, publishedIn, timeToRead
+        , titleImg, hashTags } = props.blog;
 
-    } = props.blog;
-    console.log(props.blog)
+        const addSpentTime = props.addSpentTime;
     return (
         <div className='blog'>
             <img src={titleImg} alt="title image" />
@@ -20,7 +20,7 @@ const Blog = (props) => {
                     </div>
                 </div>
                 <div>
-                    <p>{timeToRead} min read <button>bb</button></p>
+                    <p>{timeToRead} min read <button onClick={()=>addSpentTime(timeToRead)} className='btn-icon'><FontAwesomeIcon icon={faBookmark} className='icon'/></button></p>
                 </div>
             </div>
             <h1>{title}</h1>
@@ -29,6 +29,7 @@ const Blog = (props) => {
                 <p>{hashTags[1]}</p>
             </div>
             <button className='button'>Mark as Read</button>
+            
         </div>
     );
 };
