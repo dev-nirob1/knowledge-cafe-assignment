@@ -7,7 +7,7 @@ const Blog = (props) => {
     const { title, author, authorImg, publishedIn, timeToRead
         , titleImg, hashTags } = props.blog;
 
-        const addSpentTime = props.addSpentTime;
+    const {addSpentTime, markAsRead} = props;
     return (
         <div className='blog'>
             <img src={titleImg} alt="title image" />
@@ -28,7 +28,7 @@ const Blog = (props) => {
                 <p>{hashTags[0]}</p>
                 <p>{hashTags[1]}</p>
             </div>
-            <button className='button'>Mark as Read</button>
+            <button onClick={()=>markAsRead(title)} className='button'>Mark as Read</button>
             
         </div>
     );

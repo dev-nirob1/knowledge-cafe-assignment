@@ -4,8 +4,46 @@
     gap: 25px;
 }
 
-@media only screen and (max-width: 600px){
-    .blogs-container{
+.cart {
+    padding: 30px;
+}
+
+.spent-time {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6047EC;
+    background-color: #6047ec1a;
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+}
+
+.bookmark-counter {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.title-container {
+    padding: 24px;
+    margin-top: 25px;
+    border-radius: 8px;
+    background: #1111110d;
+}
+
+.mark-title {
+    margin: 15px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .blogs-container {
         grid-template-columns: 1fr;
+    }
+    .cart {
+        padding: 0;
     }
 }
