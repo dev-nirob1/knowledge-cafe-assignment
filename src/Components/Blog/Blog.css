@@ -33,15 +33,18 @@
     line-height: 160%;
     width: 80%;
 }
-.author{
+
+.author {
     font-weight: 700;
     font-size: 24px;
 }
-.date{
+
+.date {
     font-weight: 600;
     font-size: 16px;
     color: #11111199;
 }
+
 .read-time {
     color: #11111199;
     font-weight: 500;
@@ -81,5 +84,15 @@
         width: 100%;
         line-height: 120%;
 
+    }
+
+    .author {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .read-time {
+        font-weight: 500;
+        font-size: 20px;
     }
 }
